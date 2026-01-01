@@ -40,7 +40,7 @@ const products: Product[] = [
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
 		image:
-			"https://images.unsplash.com/photo-1565035014741-a09f5c587705?auto=format&fit=crop&q=80&w=1000",
+			"https://media.istockphoto.com/id/1398763091/photo/mechanic-repairing-dent-on-a-car-body-at-auto-service-center.jpg?s=612x612&w=0&k=20&c=0NR4LNBzEkkFIMDGsJ9HU-Ysk6zW8egFsswQdOmYEHU=",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
 			{ icon: Settings, label: "Tool Slots", value: "24 ATC" },
@@ -115,7 +115,7 @@ const products: Product[] = [
 		title: "Ultra VMC",
 		model: "VMC-MAX-Z",
 		image:
-			"https://images.unsplash.com/photo-1565706482631-7a4616c68e37?auto=format&fit=crop&q=80&w=1000",
+			"https://media.istockphoto.com/id/2149279878/photo/shot-blasting-man-in-production-the-sandblaster-is-sending-to-steel-material-abrasive.jpg?s=612x612&w=0&k=20&c=iVntK-1R42eULcv0hVGUEWlhHe0fweeAXU5sZQ4Dz04=",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "24k RPM" },
 			{ icon: Settings, label: "Slots", value: "60 ATC" },
@@ -160,7 +160,7 @@ const products: Product[] = [
 		title: "Heavy HMC",
 		model: "HMC-1250",
 		image:
-			"https://images.unsplash.com/photo-1565035014741-a09f5c587705?auto=format&fit=crop&q=80&w=1000",
+			"https://plus.unsplash.com/premium_photo-1682144880138-9f1c0bfe6fa7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVhdnklMjBtYWNoaW5lJTIwcGFydHN8ZW58MHx8MHx8fDA%3D",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "8k RPM" },
 			{ icon: Settings, label: "Slots", value: "80 ATC" },
@@ -250,7 +250,7 @@ const products: Product[] = [
 		title: "Twin Spindle Lathe",
 		model: "TSL-200",
 		image:
-			"https://images.unsplash.com/photo-1565706482631-7a4616c68e37?auto=format&fit=crop&q=80&w=1000",
+			"https://plus.unsplash.com/premium_photo-1664298925852-a10f7112c548?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BpbmRsZXxlbnwwfHwwfHx8MA%3D%3D",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "6k RPM" },
 			{ icon: Settings, label: "Turret", value: "24 Pos" },
@@ -280,7 +280,7 @@ const products: Product[] = [
 		title: "Surface Grinder",
 		model: "SG-150",
 		image:
-			"https://images.unsplash.com/photo-1565035014741-a09f5c587705?auto=format&fit=crop&q=80&w=1000",
+			"https://images.unsplash.com/photo-1598302936625-6075fbd98dd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JpbmRlcnxlbnwwfHwwfHx8MA%3D%3D",
 		specs: [
 			{ icon: Zap, label: "Wheel", value: "3k RPM" },
 			{ icon: Settings, label: "Table", value: "Manual" },
@@ -388,7 +388,7 @@ const ProductsSection: React.FC = () => {
 			  );
 
 	return (
-		<section className="w-full py-20 bg-slate-900 text-white">
+		<section className="w-full py-20 bg-slate-900 text-white px-10">
 			<div className="max-w-7xl mx-auto px-4 md:px-8">
 				<div className="text-center mb-12">
 					<h2 className="text-4xl md:text-5xl font-black mb-4">
