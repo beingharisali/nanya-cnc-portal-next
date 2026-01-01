@@ -4,7 +4,7 @@ import { FaProjectDiagram, FaGlobe, FaClock } from "react-icons/fa";
 
 export default function HeroSection() {
 	return (
-		<section className="bg-gray-900 min-h-screen flex items-center justify-center pt-20">
+		<section className="bg-gray-900 min-h-screen flex items-center justify-center py-20 mb-20">
 			<div className="flex flex-col lg:flex-row items-center justify-between  mx-auto w-[90%] gap-12">
 				<div className="flex-1 text-center lg:text-left w-[45%]">
 					<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
