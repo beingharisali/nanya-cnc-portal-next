@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -24,9 +25,14 @@ export default function Navbar() {
 					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
 						Contact
 					</li>
-					<button className="px-4 py-2 text-white border-none bg-orange-500 rounded-3xl hover:shadow-md transition-all duration-300 cursor-pointer hover:scale-110">
-						Get Quote
-					</button>
+					<div>
+						<button className="px-4 py-2 mx-2 text-white border-none bg-orange-500 rounded-3xl hover:shadow-md transition-all duration-300 cursor-pointer hover:scale-110">
+							Get Quote
+						</button>
+						<button className="px-4 py-2 text-white border-none bg-gray-500 rounded-3xl hover:shadow-md transition-all duration-300 cursor-pointer hover:scale-110">
+							<Link href={"/login"}>Login</Link>
+						</button>
+					</div>
 				</ul>
 				<button className="md:hidden text-2xl p-2">☰</button>
 			</div>
