@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Zap, Settings, Disc, ShieldCheck, LucideIcon } from "lucide-react";
-import Link from "next/link";
 
 interface ProductSpec {
 	icon: LucideIcon;
@@ -389,7 +388,7 @@ const ProductsSection: React.FC = () => {
 			  );
 
 	return (
-		<section className="w-full py-20 bg-slate-900 text-white px-10">
+		<section className="w-full py-20 bg-slate-900 text-white px-10 mt-15">
 			<div className="max-w-7xl mx-auto px-4 md:px-8">
 				<div className="text-center mb-12">
 					<h2 className="text-4xl md:text-5xl font-black mb-4">
@@ -400,6 +399,29 @@ const ProductsSection: React.FC = () => {
 						Discover our comprehensive range of CNC machines designed for
 						precision manufacturing at scale.
 					</p>
+				</div>
+
+				<div className="flex flex-wrap justify-center gap-3 mb-16">
+					{filters.map((filter: FilterOption) => (
+						<button
+							key={filter.name}
+							onClick={() => setActiveFilter(filter.name)}
+							className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border ${
+								activeFilter === filter.name
+									? "bg-orange-500 text-white border-orange-500 shadow-lg shadow-orange-500/30"
+									: "bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700 hover:border-slate-600"
+							}`}>
+							{filter.name}
+							<span
+								className={`text-xs ${
+									activeFilter === filter.name
+										? "text-orange-200"
+										: "text-slate-500"
+								}`}>
+								{filter.count}
+							</span>
+						</button>
+					))}
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -413,14 +435,6 @@ const ProductsSection: React.FC = () => {
 						No models currently available in this category.
 					</div>
 				)}
-			</div>
-			<div className="flex items-center justify-center m-5 pt-5">
-				<button className="mt-5 z-2 bg-orange-500 p-3 w-38 rounded-3xl transition-all duration-500 hover:scale-110 cursor-pointer hover:shadow-gray-500 shadow-sm">
-					<Link href={"/products"} className="font-semibold">
-						See more
-					</Link>
-				</button>
-				<div className="bg-orange-500 pt-px w-screen absolute z-0 mt-5"> </div>
 			</div>
 		</section>
 	);
