@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { FaProjectDiagram, FaGlobe, FaClock } from "react-icons/fa";
 
@@ -22,11 +23,13 @@ export default function HeroSection() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 						<button className="px-8 py-4 bg-orange-500 text-white rounded-[40px] text-lg font-semibold hover:bg-gray-600 transition-colors duration-300">
-							Explore Machines
+							<Link href={"/products"}>Explore Machines</Link>
 						</button>
-						<button className="px-8 rounded-[40px] py-4 border-2 border-gray-500 text-white  text-lg font-semibold hover:bg-gray-500 hover:text-white transition-colors duration-300">
-							Our Story
-						</button>
+						<Link href={"/about"}>
+							<button className="px-8 rounded-[40px] py-4 border-2 border-gray-500 text-white  text-lg font-semibold hover:bg-gray-500 hover:text-white transition-colors duration-300">
+								Our Story
+							</button>
+						</Link>
 					</div>
 					<div className="flex gap-8 mt-8 justify-around ">
 						<div className="text-center">

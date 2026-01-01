@@ -5,11 +5,38 @@ export default function Navbar() {
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-50 shadow-sm bg-white">
 			<div className="flex items-center justify-between w-[90%] mx-auto py-4">
-				<div className="flex">
-					<h1 className="text-xl font-bold">Nanya</h1>
-					<p className="text-xl font-semibold text-orange-500">CNC</p>
-				</div>
+				<Link href={"/"}>
+					<div className="flex">
+						<h1 className="text-xl font-bold">Nanya</h1>
+						<p className="text-xl font-semibold text-orange-500">CNC</p>
+					</div>
+				</Link>
 				<ul className="hidden md:flex items-center gap-10 list-none">
+					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
+						<Link href={"/"}>Home</Link>
+					</li>
+					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
+						<Link href={"/about"}>About</Link>
+					</li>
+					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
+						<Link href={"/products"}>Products</Link>
+					</li>
+					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
+						Global
+					</li>
+					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
+						Contact
+					</li>
+					<div>
+						<button className="px-4 py-2 mx-2 text-white border-none bg-orange-500 rounded-3xl hover:shadow-md transition-all duration-300 cursor-pointer hover:scale-110">
+							Get Quote
+						</button>
+						<button className="px-4 py-2 text-white border-none bg-gray-500 rounded-3xl hover:shadow-md transition-all duration-300 cursor-pointer hover:scale-110">
+							<Link href={"/login"}>Login</Link>
+						</button>
+					</div>
+				</ul>
+				<ul className="md:hidden flex items-center gap-10 list-none">
 					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
 						Home
 					</li>
