@@ -5,9 +5,9 @@ export default function Navbar() {
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-50 shadow-sm bg-white">
 			<div className="flex items-center justify-between w-[90%] mx-auto py-4">
-				<div className="flex flex-col">
+				<div className="flex">
 					<h1 className="text-xl font-bold">Nanya</h1>
-					<p className="text-sm font-semibold text-orange-500">CNC</p>
+					<p className="text-xl font-semibold text-orange-500">CNC</p>
 				</div>
 				<ul className="hidden md:flex items-center gap-10 list-none">
 					<li className="cursor-pointer hover:scale-110 transition-all duration-300">
