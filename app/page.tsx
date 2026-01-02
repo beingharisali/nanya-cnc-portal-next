@@ -10,6 +10,7 @@ export default function page() {
 		<div>
 			<Navbar />
 			<HeroSection />
+			<AboutSection />
 			<JourneySection />
 			<ProductsSection />
 			<Footer />

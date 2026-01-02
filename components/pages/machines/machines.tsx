@@ -7,6 +7,9 @@ interface ProductSpec {
 	label: string;
 	value: string;
 }
+interface props {
+	filtered?: string;
+}
 
 interface Product {
 	id: number;
@@ -377,8 +380,8 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 	);
 };
 
-const ProductsSection: React.FC = () => {
-	const [activeFilter, setActiveFilter] = useState("Vertical");
+const ProductsSection: React.FC<props> = (props) => {
+	const [activeFilter, setActiveFilter] = useState(props.filtered || "All");
 
 	const filteredProducts =
 		activeFilter === "All"
@@ -386,21 +389,9 @@ const ProductsSection: React.FC = () => {
 			: products.filter(
 					(product: Product) => product.category === activeFilter
 			  );
-
-	return (
-		<section className="w-full py-20 bg-slate-900 text-white px-10 mt-15">
-			<div className="max-w-7xl mx-auto px-4 md:px-8">
-				<div className="text-center mb-12">
-					<h2 className="text-4xl md:text-5xl font-black mb-4">
-						CNC Machine <br />
-						<span className="text-orange-500">Centers</span>
-					</h2>
-					<p className="text-slate-400 max-w-2xl mx-auto text-lg">
-						Discover our comprehensive range of CNC machines designed for
-						precision manufacturing at scale.
-					</p>
-				</div>
-
+	if (!props.filtered) {
+		return (
+			<section className="w-full py-20 bg-slate-900 text-white px-10 mt-15">
 				<div className="flex flex-wrap justify-center gap-3 mb-16">
 					{filters.map((filter: FilterOption) => (
 						<button
@@ -422,6 +413,47 @@ const ProductsSection: React.FC = () => {
 							</span>
 						</button>
 					))}
+				</div>
+				<div className="max-w-7xl mx-auto px-4 md:px-8">
+					<div className="text-center mb-12">
+						<h2 className="text-4xl md:text-5xl font-black mb-4">
+							CNC Machine <br />
+							<span className="text-orange-500">Centers</span>
+						</h2>
+						<p className="text-slate-400 max-w-2xl mx-auto text-lg">
+							Discover our comprehensive range of CNC machines designed for
+							precision manufacturing at scale.
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{filteredProducts.map((product: Product) => (
+							<ProductCard key={product.id} product={product} />
+						))}
+					</div>
+
+					{filteredProducts.length === 0 && (
+						<div className="text-center text-slate-400 py-20">
+							No models currently available in this category.
+						</div>
+					)}
+				</div>
+			</section>
+		);
+	}
+
+	return (
+		<section className="w-full py-20 bg-slate-900 text-white px-10 mt-15">
+			<div className="max-w-7xl mx-auto px-4 md:px-8">
+				<div className="text-center mb-12">
+					<h2 className="text-4xl md:text-5xl font-black mb-4">
+						CNC Machine <br />
+						<span className="text-orange-500">Centers</span>
+					</h2>
+					<p className="text-slate-400 max-w-2xl mx-auto text-lg">
+						Discover our comprehensive range of CNC machines designed for
+						precision manufacturing at scale.
+					</p>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
