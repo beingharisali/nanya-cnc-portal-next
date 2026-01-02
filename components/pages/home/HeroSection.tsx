@@ -6,7 +6,7 @@ import { FaProjectDiagram, FaGlobe, FaClock } from "react-icons/fa";
 export default function HeroSection() {
 	return (
 		<section className="bg-gray-900 min-h-screen flex items-center justify-center pt-40 pb-20 mb-20">
-			<div className="flex flex-col lg:flex-row items-center justify-between  mx-auto w-[90%] gap-12">
+			<div className="flex flex-col lg:flex-row items-center justify-between mx-auto w-[95%] sm:w-[90%] lg:w-[90%] gap-12">
 				<div className="flex-1 text-center lg:text-left w-[45%]">
 					<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
 						PRECISION
@@ -17,7 +17,7 @@ export default function HeroSection() {
 					<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8">
 						EXCELLENCE
 					</h1>
-					<p className="text-lg md:text-xl text-white mb-8">
+					<p className="text-lg md:text-xl sm:w-full text-white mb-8">
 						World-class CNC machine center engineered for ultimate precision.
 						Trusted by manufacturers across 50+ countries.
 					</p>
@@ -64,9 +64,9 @@ export default function HeroSection() {
 						</div>
 					</div>
 				</div>
-				<div className="flex-1 w-full sm:w-[70%] lg:w-[45%]">
+				<div className="flex-1 w-full sm:w-[80%] lg:w-[50%]">
 					<img
-						src="https://images.pexels.com/photos/30889575/pexels-photo-30889575.jpeg"
+						src="/Hero.jpg"
 						alt="CNC Machine center"
 						className="w-full h-auto object-cover rounded-lg shadow-2xl"
 					/>

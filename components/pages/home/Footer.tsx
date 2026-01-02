@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import {
 	Phone,
 	Mail,
@@ -44,13 +45,13 @@ const Footer: React.FC = () => {
 						<div className="flex items-center gap-2 text-white font-black text-2xl">
 							<Cpu className="text-orange-500" size={32} />
 							<span>
-								CNC<span className="text-orange-500">PRO</span>
+								Nanya<span className="text-orange-500">CNC</span>
 							</span>
 						</div>
 						<p className="text-sm leading-relaxed text-slate-400">
-							Leading provider of high-precision CNC solutions since 1995. We
-							specialize in Vertical, Horizontal, and 5-Axis machining centers
-							for global industrial leaders.
+							From a small workshop in China to a global leader in CNC
+							manufacturing, our journey is defined by relentless pursuit of
+							precision.
 						</p>
 						<div className="flex gap-4">
 							{[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
@@ -70,19 +71,19 @@ const Footer: React.FC = () => {
 						</h4>
 						<ul className="space-y-4 text-sm">
 							{[
-								"Vertical Centers",
-								"Horizontal Centers",
-								"5-Axis Solutions",
-								"Turning Lathes",
-								"Surface Grinders",
+								["Vertical Centers", "vertical"],
+								["Horizontal Centers", "horizontal"],
+								["5-Axis Solutions", "axis"],
+								["Turning Lathes", "turning"],
+								["Surface Grinders", "surface"],
 							].map((link) => (
-								<li key={link}>
-									<a
-										href="#"
+								<li key={link[0]}>
+									<Link
+										href={`/products/${link[1]}`}
 										className="hover:text-orange-500 transition-colors flex items-center gap-2">
 										<div className="w-1 h-1 bg-orange-500 rounded-full"></div>{" "}
 										{link}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -119,17 +120,23 @@ const Footer: React.FC = () => {
 							<li className="flex items-start gap-3">
 								<MapPin className="text-orange-500 shrink-0" size={20} />
 								<span>
-									123 Industrial Park, Tech Avenue, <br />
-									Silicon Valley, CA 94025
+									5F-1, No. 118, Dadun 20th Street, Xitun District,
+									<br /> Taichung City, 407
 								</span>
 							</li>
 							<li className="flex items-center gap-3">
 								<Phone className="text-orange-500 shrink-0" size={20} />
-								<span>+1 (555) 123-4567</span>
+								<div>
+									<p>+886-4-26699-0550 </p>
+									<p>+886-928-021-628</p>
+								</div>
 							</li>
 							<li className="flex items-center gap-3">
 								<Mail className="text-orange-500 shrink-0" size={20} />
-								<span>sales@cncpro-industrial.com</span>
+								<div>
+									<p>att0905@gmail.com </p>
+									<p>adam@nanya-ent.com </p>
+								</div>
 							</li>
 						</ul>
 					</div>
