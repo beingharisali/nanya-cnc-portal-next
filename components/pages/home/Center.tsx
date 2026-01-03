@@ -54,6 +54,9 @@ const ProductsSection: React.FC = () => {
 			? products
 			: products.filter((product: any) => product.category === activeFilter);
 
+	// Create a new variable to hold only the first 6 items
+	const displayedProducts = filteredProducts.slice(0, 6);
+
 	return (
 		<section className="w-full py-20 bg-slate-900 text-white px-10">
 			<div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -69,19 +72,21 @@ const ProductsSection: React.FC = () => {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{filteredProducts.map((product: any) => (
+					{/* Map over displayedProducts instead of filteredProducts */}
+					{displayedProducts.map((product: any) => (
 						<ProductCard key={product.id} product={product} />
 					))}
 				</div>
 
-				{filteredProducts.length === 0 && (
+				{displayedProducts.length === 0 && (
 					<div className="text-center text-slate-400 py-20">
 						No models currently available in this category.
 					</div>
 				)}
 			</div>
+
 			<div className="flex items-center justify-center m-5 pt-5">
-				<button className="mt-5 z-2 bg-orange-500 p-3 w-38 rounded-3xl transition-all duration-500 hover:scale-110 cursor-pointer hover:shadow-gray-500 shadow-sm">
+				<button className="mt-5 z-10 bg-orange-500 p-3 w-38 rounded-3xl transition-all duration-500 hover:scale-110 cursor-pointer hover:shadow-gray-500 shadow-sm">
 					<Link href={"/products"} className="font-semibold">
 						View more
 					</Link>
@@ -91,5 +96,4 @@ const ProductsSection: React.FC = () => {
 		</section>
 	);
 };
-
 export default ProductsSection;
