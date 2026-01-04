@@ -18,7 +18,7 @@ const JourneySection = () => {
 			description: "5-axis machining centers launched",
 		},
 		{
-			year: "2024",
+			year: "2025",
 			title: "Global",
 			description: "Serving 50+ countries worldwide",
 		},

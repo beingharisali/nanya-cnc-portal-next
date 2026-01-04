@@ -44,9 +44,7 @@ const Footer: React.FC = () => {
 					<div className="space-y-6">
 						<div className="flex items-center gap-2 text-white font-black text-2xl">
 							<Cpu className="text-orange-500" size={32} />
-							<span>
-								Nanya<span className="text-orange-500">CNC</span>
-							</span>
+							<img src="/footer.png" alt="footer icon" />
 						</div>
 						<p className="text-sm leading-relaxed text-slate-400">
 							From a small workshop in China to a global leader in CNC
