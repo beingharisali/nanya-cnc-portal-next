@@ -69,7 +69,7 @@ export default function HeroSection() {
 
 				<div className="flex-1 w-full sm:w-[85%] lg:w-[50%] order-1 lg:order-2">
 					<img
-						src="/Hero.jpg"
+						src="/Hero.jpeg"
 						alt="CNC Machine center"
 						className="w-full h-auto object-cover rounded-2xl shadow-2xl shadow-orange-500/10"
 					/>
