@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 					<div className="space-y-6">
 						<div className="flex items-center gap-2 text-white font-black text-2xl">
-							<img src="/footerimg.png" alt="footer icon" className="w-30" />
+							<img src="/footerimg.png" alt="footer icon" className="w-25" />
 						</div>
 						<p className="text-sm leading-relaxed text-slate-400">
 							From a small workshop in China to a global leader in CNC
