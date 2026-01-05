@@ -12,7 +12,7 @@ export default function Navbar() {
 					<Link href={"/"}>
 						<img src="/image.png" alt="logo" className="w-35" />
 					</Link>
-					<ul className="hidden lg:flex items-center gap-10 list-none">
+					<ul className="hidden lg:flex items-center gap-10 list-none text-gray-700">
 						<li className="cursor-pointer hover:scale-110 transition-all duration-300">
 							<Link href={"/"}>Home</Link>
 						</li>
