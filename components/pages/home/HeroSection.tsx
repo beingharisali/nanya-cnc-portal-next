@@ -6,8 +6,8 @@ import { FaProjectDiagram, FaGlobe, FaClock } from "react-icons/fa";
 export default function HeroSection() {
 	return (
 		<section className="bg-gray-900 min-h-screen flex items-center justify-center pt-24 pb-12 md:pt-32 lg:pt-40 lg:pb-20">
-			<div className="flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] max-w-7xl gap-10 lg:gap-12">
-				<div className="flex-1 text-center lg:text-left w-full lg:max-w-[50%] order-2 lg:order-1">
+			<div className="flex flex-row items-center justify-between mx-auto w-[90%] gap-4 lg:gap-8">
+				<div className="flex-1 text-left w-full max-w-[50%]">
 					<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
 						PRECISION
 					</h1>
@@ -23,7 +23,7 @@ export default function HeroSection() {
 						Trusted by manufacturers across 50+ countries.
 					</p>
 
-					<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+					<div className="flex flex-row gap-4 justify-start">
 						<Link href="/products" className="w-full sm:w-auto">
 							<button className="w-full px-8 py-3 md:py-4 bg-orange-500 text-white rounded-[40px] text-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
 								Explore Machines
@@ -36,7 +36,7 @@ export default function HeroSection() {
 						</Link>
 					</div>
 
-					<div className="grid grid-cols-3 gap-2 md:gap-8 mt-12">
+					<div className="flex gap-4 md:gap-8 mt-12">
 						<div className="text-center">
 							<div className="bg-white/10 p-3 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mx-auto mb-2">
 								<FaProjectDiagram className="text-orange-500 text-lg md:text-xl" />
@@ -67,7 +67,7 @@ export default function HeroSection() {
 					</div>
 				</div>
 
-				<div className="flex-1 w-full sm:w-[85%] lg:w-[50%] order-1 lg:order-2">
+				<div className="flex-1 w-full max-w-[50%]">
 					<img
 						src="/Hero.jpeg"
 						alt="CNC Machine center"

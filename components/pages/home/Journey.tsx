@@ -26,7 +26,7 @@ const JourneySection = () => {
 
 	return (
 		<section className="w-full py-20 bg-white">
-			<div className="max-w-6xl mx-auto px-4 md:px-8">
+			<div className="max-w-6xl w-[90%] mx-auto">
 				<h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-20">
 					Our Journey
 				</h2>
