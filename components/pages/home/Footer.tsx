@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="bg-[#0b1120] text-slate-300 px-16 pb-8 border-t border-slate-800">
-			<div className="max-w-7xl mx-auto px-4 md:px-8">
+		<footer className="bg-[#0b1120] text-slate-300 pb-8 border-t border-slate-800">
+			<div className="w-[90%] mx-auto ">
 				<div className="bg-orange-500 rounded-2xl p-8 md:p-12 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 transform -translate-y-4 shadow-xl">
 					<div className="text-center md:text-left">
 						<h3 className="text-white text-2xl md:text-3xl font-black mb-2">

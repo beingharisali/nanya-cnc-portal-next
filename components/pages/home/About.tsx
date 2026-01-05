@@ -3,9 +3,9 @@ import { Target, Wrench, Users, TrendingUp } from "lucide-react";
 
 const AboutSection = () => {
 	return (
-		<section className="w-full py-16 px-4 md:px-8 bg-white text-slate-800 mt-20">
-			<div className="max-w-7xl mx-auto">
-				<div className="text-center mb-16 space-y-4">
+		<section className="w-full py-16 bg-white text-slate-800 mt-20">
+			<div className="w-[90%] mx-auto">
+				<div className="text-center w-[90%] mx-auto mb-16 space-y-4">
 					<div className="inline-block px-4 py-1.5 bg-orange-100 text-orange-600 font-semibold rounded-full text-sm mb-2">
 						Our Story
 					</div>
