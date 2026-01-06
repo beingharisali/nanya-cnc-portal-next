@@ -1,9 +1,23 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaProjectDiagram, FaGlobe, FaClock } from "react-icons/fa";
 
 export default function HeroSection() {
+	const images = ["/Hero.jpeg", "/Hero1.jpeg", "/Hero2.jpeg"];
+	const [currentImage, setCurrentImage] = useState(0);
+	const [isTransitioning, setIsTransitioning] = useState(false);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setIsTransitioning(true);
+			setTimeout(() => {
+				setCurrentImage((prev) => (prev + 1) % images.length);
+				setIsTransitioning(false);
+			}, 300);
+		}, 5000);
+		return () => clearInterval(interval);
+	}, [images.length]);
 	return (
 		<section className="bg-gray-900 min-h-screen flex items-center justify-center pt-24 pb-12 md:pt-32 lg:pt-40 lg:pb-20">
 			<div className="flex flex-row items-center justify-between mx-auto w-[90%] gap-4 lg:gap-8">
@@ -67,11 +81,13 @@ export default function HeroSection() {
 					</div>
 				</div>
 
-				<div className="flex-1 w-full max-w-[50%]">
+				<div className="flex-1 w-full max-w-[50%] relative overflow-hidden">
 					<img
-						src="/Hero.jpeg"
+						src={images[currentImage]}
 						alt="CNC Machine center"
-						className="w-full h-auto object-cover rounded-2xl shadow-2xl shadow-orange-500/10"
+						className={`w-full h-auto object-cover rounded-2xl shadow-2xl shadow-orange-500/10 transition-all duration-500 transform hover:scale-105 ${
+							isTransitioning ? 'opacity-0' : 'opacity-100'
+						}`}
 					/>
 				</div>
 			</div>
