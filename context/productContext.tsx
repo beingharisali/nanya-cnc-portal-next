@@ -31,11 +31,10 @@ const products: Product[] = [
 	{
 		id: 1,
 		category: "Vertical",
-		badge: "Best Seller",
+		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
-		image:
-			"https://media.istockphoto.com/id/1398763091/photo/mechanic-repairing-dent-on-a-car-body-at-auto-service-center.jpg?s=612x612&w=0&k=20&c=0NR4LNBzEkkFIMDGsJ9HU-Ysk6zW8egFsswQdOmYEHU=",
+		image: "/bestselling.jpeg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
 			{ icon: Settings, label: "Tool Slots", value: "24 ATC" },
