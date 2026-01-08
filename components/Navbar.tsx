@@ -10,7 +10,7 @@ export default function Navbar() {
 			<nav className="fixed top-0 left-0 right-0 z-50 shadow-sm bg-white">
 				<div className="flex items-center justify-between w-[90%] mx-auto py-4">
 					<Link href={"/"} className="flex items-center justify-center">
-						<img src="/cnslogo.png" alt="logo" className="w-55" />
+						<img src="/cnslogo.png" alt="logo" className="lg:w-55 w-40" />
 					</Link>
 					<ul className="hidden lg:flex items-center gap-10 list-none text-gray-700">
 						<li className="cursor-pointer hover:scale-110 transition-all duration-300">
