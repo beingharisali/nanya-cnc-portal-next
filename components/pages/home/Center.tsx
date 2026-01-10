@@ -10,7 +10,7 @@ const ProductCard: React.FC<{ product: any }> = ({ product }) => {
 				<img
 					src={product.image}
 					alt={product.model}
-					className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+					className="w-full h-full object-fit transform transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
 					{product.badge}
