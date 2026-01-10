@@ -622,4 +622,3 @@ const ProductsSection: React.FC<props> = (props) => {
 };
 
 export default ProductsSection;
-console.log();

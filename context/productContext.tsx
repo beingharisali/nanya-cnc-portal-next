@@ -505,4 +505,3 @@ export function useProducts() {
 	}
 	return context;
 }
-console.log();
