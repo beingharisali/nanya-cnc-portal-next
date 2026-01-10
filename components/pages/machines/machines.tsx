@@ -42,7 +42,7 @@ const products: Product[] = [
 		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
-		image: "/bestselling.jpeg",
+		image: "/mchn.jpg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
 			{ icon: Settings, label: "Tool Slots", value: "24 ATC" },
@@ -490,11 +490,11 @@ const products: Product[] = [
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 	return (
 		<div className="bg-slate-800 rounded-2xl overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50">
-			<div className="relative h-64 overflow-hidden">
+			<div className="relative h-68 overflow-hidden">
 				<img
 					src={product.image}
 					alt={product.model}
-					className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+					className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 "
 				/>
 				<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
 					{product.badge}
