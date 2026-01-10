@@ -34,7 +34,7 @@ const products: Product[] = [
 		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
-		image: "/bestselling.jpeg",
+		image: "/mchn.jpg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
 			{ icon: Settings, label: "Tool Slots", value: "24 ATC" },
@@ -505,3 +505,4 @@ export function useProducts() {
 	}
 	return context;
 }
+console.log();

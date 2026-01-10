@@ -6,7 +6,7 @@ import { useProducts } from "@/context/productContext";
 const ProductCard: React.FC<{ product: any }> = ({ product }) => {
 	return (
 		<div className="bg-slate-800  rounded-2xl overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50">
-			<div className="relative h-64 overflow-hidden">
+			<div className="relative h-72 overflow-hidden">
 				<img
 					src={product.image}
 					alt={product.model}
@@ -101,3 +101,4 @@ const ProductsSection: React.FC = () => {
 	);
 };
 export default ProductsSection;
+console.log();
