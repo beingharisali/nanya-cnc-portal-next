@@ -15,6 +15,7 @@ interface Product {
 	title: string;
 	model: string;
 	image: string;
+	badge2?: string;
 	specs: ProductSpec[];
 }
 
@@ -34,6 +35,7 @@ const products: Product[] = [
 		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
+		badge2: "Eco-Line",
 		image: "/testignseller1.jpeg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },

@@ -12,8 +12,13 @@ const ProductCard: React.FC<{ product: any }> = ({ product }) => {
 					alt={product.model}
 					className="w-full h-full object-fit transform transition-transform duration-500 group-hover:scale-110"
 				/>
-				<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
-					{product.badge}
+				<div>
+					<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+						{product.badge}
+					</div>
+					<div className="absolute top-4 right-4 bg-white text-green-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+						{product.badge2}
+					</div>
 				</div>
 			</div>
 

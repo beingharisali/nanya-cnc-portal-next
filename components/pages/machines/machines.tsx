@@ -17,6 +17,7 @@ interface Product {
 	badge: string;
 	title: string;
 	model: string;
+	badge2?: string;
 	image: string;
 	specs: ProductSpec[];
 }
@@ -42,6 +43,7 @@ const products: Product[] = [
 		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
+		badge2: "Eco-Line",
 		image: "/testignseller1.jpeg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
@@ -476,6 +478,7 @@ const products: Product[] = [
 		badge: "Industrial",
 		title: "Rotary Grinder",
 		model: "SG-ROT-50",
+		badge2: "Eco-Line",
 		image:
 			"https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1000",
 		specs: [
@@ -496,8 +499,14 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 					alt={product.model}
 					className="w-full h-full object-fit transform transition-transform duration-500 group-hover:scale-110 "
 				/>
-				<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
-					{product.badge}
+				<div>
+					<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+						{product.badge}
+					</div>
+
+					<div className="absolute top-4 right-4 bg-white text-green-700 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+						<h1 className="font-semibold">{product.badge2}</h1>
+					</div>
 				</div>
 			</div>
 
