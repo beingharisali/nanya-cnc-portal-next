@@ -34,7 +34,7 @@ const products: Product[] = [
 		badge: "Best Selling",
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
-		image: "/mchn.jpg",
+		image: "/testignseller1.jpeg",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
 			{ icon: Settings, label: "Tool Slots", value: "24 ATC" },
