@@ -10,7 +10,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 	return (
 		<Link href={`/products/${id}/product/${name}/details`}>
-			<div className="bg-slate-800 rounded-2xl overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50">
+			<div className="bg-gray-500 rounded-2xl overflow-hidden group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50">
 				<div className="relative h-72 overflow-hidden">
 					<img
 						src={image}

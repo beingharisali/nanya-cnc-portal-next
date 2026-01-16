@@ -30,7 +30,7 @@ const products: Product[] = [
 		models: [
 			{
 				name: "VMC-NANO-X8",
-				image: "/x8/img.png",
+				image: "/x8/x8.png",
 				travel: [
 					{
 						item: "X-Axis Travel",
@@ -290,7 +290,7 @@ const products: Product[] = [
 			},
 			{
 				name: "VMC-NANO-X10",
-				image: "/x8/img.png",
+				image: "/x8/x10.png",
 				travel: [
 					{
 						item: "X-Axis Travel",
