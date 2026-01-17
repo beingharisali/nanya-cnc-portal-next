@@ -27,8 +27,10 @@ export default function Page() {
 		<div className="bg-gray-900 min-h-screen">
 			<Navbar />
 			<section className="mt-10">
-				<div className="bg-[url('/backgrounds/background.jpg')] h-[40vh] w-full bg-cover bg-center bg-no-repeat brightness-50 saturate-50 flex items-center justify-center">
-					<h1 className="text-white text-5xl font-bold uppercase tracking-widest">
+				<div className="relative h-[50vh] w-full overflow-hidden flex items-center justify-center">
+					<div className="absolute inset-0 bg-[url('/Hero1.jpeg')] bg-cover bg-center bg-no-repeat brightness-50 saturate-50" />
+
+					<h1 className="relative z-10 text-white text-5xl font-bold uppercase tracking-widest">
 						{parentProduct.title}
 					</h1>
 				</div>

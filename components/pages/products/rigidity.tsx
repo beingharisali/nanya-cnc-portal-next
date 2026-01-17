@@ -4,21 +4,25 @@ const RigiditySection = () => {
 	const features = [
 		"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 		"Without counterweight design that enhances surface accuracy",
-		"A 198% increase in column span significantly improves load-bearing capacity and rigidity, enhancing the structure's stability and reliability",
+		"Significantly improves load-bearing capacity and rigidity, enhancing the structure's stability and reliability.",
+		"Spindle ram rigidity and empower the spindle & heavy motor load capacity",
+		"High-rigidity design ensures continuous accuracy and stability during heavy operations",
 	];
 
 	return (
-		<section className="w-[90%]  mx-auto py-16 font-sans text-white">
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-				<div className="flex flex-col justify-center">
-					<h2 className="text-3xl font-bold mb-8 tracking-tight">
+		<section className="w-full mx-auto py-12 md:py-20 font-sans text-white">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+				<div className="flex flex-col justify-center order-2 lg:order-1 px-[5%] lg:pl-[10%] lg:pr-0">
+					<h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-10 tracking-tight text-center lg:text-left">
 						Structure Rigidity
 					</h2>
-					<ul className="space-y-6">
+					<ul className="space-y-5 md:space-y-6">
 						{features.map((text, index) => (
-							<li key={index} className="flex items-start gap-4 group">
-								<span className="text-[10px] mt-2 text-white shrink-0">▲</span>
-								<p className="text-lg leading-snug opacity-90 group-hover:opacity-100 transition-opacity">
+							<li key={index} className="flex items-start gap-3 md:gap-4 group">
+								<span className="text-[8px] md:text-[10px] mt-2 text-white shrink-0 opacity-70">
+									▲
+								</span>
+								<p className="text-base md:text-lg leading-snug opacity-90 group-hover:opacity-100 transition-opacity">
 									{text}
 								</p>
 							</li>
@@ -26,17 +30,20 @@ const RigiditySection = () => {
 					</ul>
 				</div>
 
-				<div className="flex flex-col items-center justify-end w-full">
-					<div className="relative w-full max-w-md lg:max-w-full flex justify-center items-baseline gap-4">
-						<div className="flex flex-col items-center w-full">
+				<div className="flex flex-col items-center justify-center w-full order-1 lg:order-2">
+					<div className="w-[90%] lg:w-full lg:max-w-5xl">
+						<div className="flex flex-col items-center">
 							<img
-								src="https://www.ycmcnc.com/_upload/T11/2-Enforced%20Column%20Structure.jpg"
+								src="/feature.jpeg"
 								alt="T series rigid structure"
-								className="w-full h-auto object-contain rounded-2xl"
+								className="w-full h-auto object-contain rounded-2xl shadow-2xl"
 							/>
-							<span className="mt-4 text-xl font-semibold tracking-wide uppercase">
-								X Series
-							</span>
+							<div className="mt-6 flex flex-col items-center">
+								<span className="text-lg md:text-xl font-semibold tracking-widest uppercase">
+									X Series
+								</span>
+								<div className="h-1 w-12 bg-white mt-2 opacity-50 rounded-full"></div>
+							</div>
 						</div>
 					</div>
 				</div>

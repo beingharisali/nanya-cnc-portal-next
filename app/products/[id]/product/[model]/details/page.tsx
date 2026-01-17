@@ -82,7 +82,7 @@ export default function Page() {
 			<Navbar />
 			<section className="relative h-[45vh] flex items-center justify-center">
 				<div className="absolute inset-0 bg-black/60 z-10"></div>
-				<div className="absolute inset-0 bg-[url('/backgrounds/background.jpg')] bg-cover bg-center"></div>
+				<div className="absolute inset-0 bg-[url('/Hero1.jpeg')] bg-cover bg-center"></div>
 				<div className="relative z-20 text-center px-6">
 					<nav className="flex justify-center items-center gap-2 text-orange-500 text-sm font-bold mb-4 uppercase tracking-widest">
 						<span>{parentProduct.category}</span>
@@ -124,9 +124,9 @@ export default function Page() {
 			{display === "features" && (
 				<section>
 					<div className="flex justify-center items-center my-10">
-						<h1 className="text-5xl">Features</h1>
+						<h1 className="text-3xl">Features</h1>
 					</div>
-					<div className="w-screen text-orange-500 p-px bg-amber-50 my-10"></div>
+
 					<RigiditySection />
 					<StructureSection />
 				</section>
@@ -135,19 +135,18 @@ export default function Page() {
 				<>
 					<div>
 						<div className="flex justify-center items-center my-10">
-							<h1 className="text-5xl">Specification</h1>
+							<h1 className="text-3xl">Specification</h1>
 						</div>
-						<div className="w-screen text-orange-500 p-px bg-amber-50 my-10"></div>
 					</div>
 					<section className="max-w-7xl mx-auto px-6 py-20">
 						<div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 							<div className="lg:col-span-5">
 								<div className="sticky top-28">
-									<div className="bg-linear-to-b from-gray-200 to-gray-700 rounded-3xl p-10 border border-slate-800 shadow-2xl group">
+									<div className="bg-linear-to-br from-gray-300 to-white rounded-3xl p-10 border border-slate-800 shadow-2xl group">
 										<img
 											src={detailedModel.image}
 											alt={detailedModel.name}
-											className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+											className="w-full h-auto object-contain transition-transform duration-500 scale-130 group-hover:scale-105"
 										/>
 									</div>
 									<div className="mt-8 p-6 bg-orange-600/10 border border-orange-600/20 rounded-2xl">
