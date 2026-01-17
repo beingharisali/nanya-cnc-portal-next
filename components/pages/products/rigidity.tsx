@@ -10,9 +10,9 @@ const RigiditySection = () => {
 	];
 
 	return (
-		<section className="w-full mx-auto py-12 md:py-20 font-sans text-white">
+		<section className="w-full lg:w-[90%] mx-auto py-12 md:py-20 font-sans text-white">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-				<div className="flex flex-col justify-center order-2 lg:order-1 px-[5%] lg:pl-[10%] lg:pr-0">
+				<div className="flex flex-col justify-center order-2 lg:order-1 px-[5%] lg:px-0">
 					<h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-10 tracking-tight text-center lg:text-left">
 						Structure Rigidity
 					</h2>

@@ -80,7 +80,7 @@ export default function Page() {
 	return (
 		<div className="bg-gray-900 min-h-screen text-slate-200">
 			<Navbar />
-			<section className="relative h-[45vh] flex items-center justify-center">
+			<section className="relative h-[55vh] flex items-center justify-center">
 				<div className="absolute inset-0 bg-black/60 z-10"></div>
 				<div className="absolute inset-0 bg-[url('/Hero1.jpeg')] bg-cover bg-center"></div>
 				<div className="relative z-20 text-center px-6">
