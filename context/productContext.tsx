@@ -31,6 +31,7 @@ const products: Product[] = [
 			{
 				name: "VMC-NANO-X8",
 				image: "/x8/x8.png",
+				features: "",
 				travel: [
 					{
 						item: "X-Axis Travel",
