@@ -13,6 +13,9 @@ export default interface Product {
 	model: string;
 	badge2?: string;
 	image: string;
+	feature1?: any;
+	feature2?: any;
+	download?: string;
 	specs: ProductSpec[];
 	models?: any;
 }

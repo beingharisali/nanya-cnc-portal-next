@@ -36,7 +36,7 @@ export default function Page() {
 				</div>
 
 				<div className="pb-20 pt-15 px-4 ">
-					<div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
+					<div className=" mx-auto flex flex-wrap justify-center gap-8">
 						{modelsList.map((modelData: any, index: number) => (
 							<div key={index} className="w-full max-w-md">
 								<ProductCard

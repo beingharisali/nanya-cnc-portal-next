@@ -25,8 +25,10 @@ export default function Page() {
 	const parentProduct = products.find((p: any) => p.id === Number(id));
 
 	const detailedModel = parentProduct?.models?.find(
-		(m: any) => m.name === modelParam
+		(m: any) => m.name === modelParam,
 	);
+
+	const downloadURl = parentProduct?.download;
 
 	if (!parentProduct || !detailedModel) {
 		return (
@@ -115,7 +117,7 @@ export default function Page() {
 					className="bg-orange-500 p-3 rounded-4xl font-semibold">
 					Specifications
 				</button>
-				<a href="/documents/nano-x8.pdf" download="Machine_Catalog_2024.pdf">
+				<a href={downloadURl} download="Machine_Catalog_2024.pdf">
 					<button className="bg-orange-500 p-3 px-6 rounded-full font-semibold hover:bg-orange-600 transition-colors">
 						Download
 					</button>
@@ -206,7 +208,7 @@ export default function Page() {
 													{item}
 												</span>
 											</div>
-										)
+										),
 									)}
 								</div>
 							</div>
@@ -224,7 +226,7 @@ export default function Page() {
 													{item}
 												</span>
 											</div>
-										)
+										),
 									)}
 								</div>
 							</div>

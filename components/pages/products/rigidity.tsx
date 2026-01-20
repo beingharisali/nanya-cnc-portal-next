@@ -1,13 +1,21 @@
+import { useProducts } from "@/context/productContext";
+import { useParams } from "next/navigation";
 import React from "react";
 
 const RigiditySection = () => {
-	const features = [
-		"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
-		"Without counterweight design that enhances surface accuracy",
-		"Significantly improves load-bearing capacity and rigidity, enhancing the structure's stability and reliability.",
-		"Spindle ram rigidity and empower the spindle & heavy motor load capacity",
-		"High-rigidity design ensures continuous accuracy and stability during heavy operations",
-	];
+	const params = useParams();
+	const id = params.id;
+	const modelParam = params.model;
+
+	const { products } = useProducts();
+	const parentProduct = products.find((p: any) => p.id === Number(id));
+
+	const detailedModel = parentProduct?.models?.find(
+		(m: any) => m.name === modelParam,
+	);
+
+	const data = detailedModel.feature1.data;
+	const imageURL = detailedModel.feature1.image;
 
 	return (
 		<section className="w-full lg:w-[90%] mx-auto py-12 md:py-20 font-sans text-white">
@@ -17,7 +25,7 @@ const RigiditySection = () => {
 						Structure Rigidity
 					</h2>
 					<ul className="space-y-5 md:space-y-6">
-						{features.map((text, index) => (
+						{data.map((text: string, index: number) => (
 							<li key={index} className="flex items-start gap-3 md:gap-4 group">
 								<span className="text-[8px] md:text-[10px] mt-2 text-white shrink-0 opacity-70">
 									▲
@@ -34,7 +42,7 @@ const RigiditySection = () => {
 					<div className="w-[90%] lg:w-full lg:max-w-5xl">
 						<div className="flex flex-col items-center">
 							<img
-								src="/feature.jpeg"
+								src={imageURL}
 								alt="T series rigid structure"
 								className="w-full h-auto object-contain rounded-2xl shadow-2xl"
 							/>
