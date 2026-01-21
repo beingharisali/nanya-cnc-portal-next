@@ -11,7 +11,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 	return (
 		<Link href={`/products/${id}/product/${name}/details`}>
 			<div className="bg-white rounded-2xl overflow-hidden group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
-				<div className="relative h-72 overflow-hidden bg-gray-100">
+				<div className="relative h-72 overflow-hidden bg-gray-100 scale-75">
 					<img
 						src={image}
 						alt={name}
