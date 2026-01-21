@@ -598,7 +598,7 @@ const products: Product[] = [
 		badge: "High Speed",
 		title: "Vertical Machine Center",
 		model: "VMC-NV-855 / 1165 / 1370",
-		download:"/documents/nv-855.pdf"
+		download: "/documents/nv-855.pdf",
 		image: "/nv/NV-855-03.png",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "12,000 RPM" },
