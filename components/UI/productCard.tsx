@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 					<img
 						src={image}
 						alt={name}
-						className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+						className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-110 transition-all duration-700 group-hover:scale-115"
 					/>
 					<div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 						VIEW
