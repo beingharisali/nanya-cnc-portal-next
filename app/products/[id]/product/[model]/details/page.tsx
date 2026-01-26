@@ -28,7 +28,7 @@ export default function Page() {
 		(m: any) => m.name === modelParam,
 	);
 
-	const downloadURl = parentProduct?.download;
+	const downloadURl = detailedModel?.download;
 
 	if (!parentProduct || !detailedModel) {
 		return (

@@ -1,6 +1,13 @@
 "use client";
 import React, { createContext, useContext } from "react";
-import { Zap, Settings, Disc, ShieldCheck, LucideIcon } from "lucide-react";
+import {
+	Zap,
+	Settings,
+	Disc,
+	ShieldCheck,
+	LucideIcon,
+	Download,
+} from "lucide-react";
 import Product, { ProductSpec } from "@/types/product";
 
 interface FilterOption {
@@ -33,6 +40,7 @@ const products: Product[] = [
 			{
 				name: "VMC-NANO-X8",
 				image: "/x8/x8.png",
+				download: "/documents/nano-x8.pdf",
 				feature1: {
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
@@ -313,6 +321,7 @@ const products: Product[] = [
 			{
 				name: "VMC-NANO-X10",
 				image: "/x8/x10.png",
+				download: "/documents/nano-x10.pdf",
 				feature1: {
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
@@ -610,6 +619,7 @@ const products: Product[] = [
 			{
 				name: "NV-855",
 				image: "/nv/NV-855-03.png",
+				download: "/documents/nv-855.pdf",
 				feature1: {
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
@@ -897,6 +907,7 @@ const products: Product[] = [
 			{
 				name: "NV-1165",
 				image: "/nv/NV-1165-02.png",
+				download: "/documents/nv1165.pdf",
 				feature1: {
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
@@ -1184,6 +1195,7 @@ const products: Product[] = [
 			{
 				name: "NV-1370",
 				image: "/nv/1370.png",
+				download: "/documents/nv1370.pdf",
 				feature1: {
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
@@ -1489,6 +1501,7 @@ const products: Product[] = [
 			{
 				name: "HMC-630A",
 				image: "/hmc/hmc.png",
+				download: "/documents/HMC630.pdf",
 				feature:
 					"High-rigidity Horizontal Machining Center designed for heavy-duty cutting and high-precision machining.",
 				feature1: {
@@ -1759,6 +1772,7 @@ const products: Product[] = [
 			{
 				name: "HMC-800A-B",
 				image: "/hmc/hmc2.png",
+				download: "/documents/hmc800.pdf",
 				feature:
 					"High-rigidity Horizontal Machining Center designed for heavy-duty cutting and high-precision machining.",
 				feature1: {
@@ -2046,6 +2060,7 @@ const products: Product[] = [
 			{
 				name: "3015S",
 				image: "/hbd/hd2.png",
+				download: "/documents/3105S.pdf",
 				feature:
 					"High Precision Slant Bed CNC Lathe 3015S designed for heavy duty turning applications.",
 				feature1: {
@@ -2266,6 +2281,7 @@ const products: Product[] = [
 			{
 				name: "3605M",
 				image: "/hbd/hd2.png",
+				download: "/documents/3605M.pdf",
 				feature:
 					"High Precision Slant Bed CNC Lathe 3605M designed for heavy duty turning applications with large capacity.",
 				feature1: {
@@ -2503,6 +2519,7 @@ const products: Product[] = [
 			{
 				name: "VLT-550",
 				image: "/vt/vlt 550.png",
+				download: "/documents/VLT-550.pdf",
 				feature:
 					"High-performance CNC Vertical Lathe designed for heavy-duty turning operations with a compact footprint.",
 				feature1: {
@@ -2754,6 +2771,7 @@ const products: Product[] = [
 			{
 				name: "VLT-750",
 				image: "/vt/vlt-750.png",
+				download: "/documents/vlt-750.pdf",
 				feature:
 					"Heavy-duty CNC Vertical Lathe featuring a large 15-inch chuck and increased turning capacity.",
 				feature1: {
