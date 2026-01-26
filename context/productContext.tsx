@@ -2059,7 +2059,7 @@ const products: Product[] = [
 		models: [
 			{
 				name: "3015S",
-				image: "/hbd/hd2.png",
+				image: "/hbd/hd1.png",
 				download: "/documents/3105S.pdf",
 				feature:
 					"High Precision Slant Bed CNC Lathe 3015S designed for heavy duty turning applications.",

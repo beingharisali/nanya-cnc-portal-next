@@ -11,11 +11,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 	return (
 		<Link href={`/products/${id}/product/${name}/details`}>
 			<div className="bg-white rounded-2xl overflow-hidden group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
-				<div className="relative h-72 overflow-hidden bg-gray-100 scale-75">
+				<div className="relative h-90 overflow-hidden bg-gray-100 scale-75">
 					<img
 						src={image}
 						alt={name}
-						className="w-full h-full object-fit grayscale group-hover:grayscale-0 scale-115 transition-all duration-700 group-hover:scale-120"
+						className="w-full h-full object-fit grayscale group-hover:grayscale-0 scale-110 transition-all duration-700 group-hover:scale-115"
 					/>
 					<div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 						VIEW
