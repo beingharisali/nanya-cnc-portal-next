@@ -27,7 +27,7 @@ const products: Product[] = [
 		title: "Vertical Machining Center",
 		model: "VMC-NANO-X8 / X10",
 		badge2: "Eco-Line",
-		image: "/x8/demo.png",
+		image: "/x8/x8.png",
 		download: "/documents/nano-x8.pdf",
 
 		specs: [
