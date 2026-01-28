@@ -7,7 +7,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 	return (
 		<Link href={`/products/${product.id}/product`}>
 			<div className="relative isolate overflow-hidden bg-gray-100 rounded-2xl group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50 w-full mx-auto lg:max-w-xl xl:max-w-2xl">
-				<div className="relative h-68 md:h-80 lg:h-105 w-full bg-gray-100 flex items-center justify-center flex-col">
+				<div className="relative h-68 md:h-80 lg:h-90 w-full bg-gray-100 flex items-center justify-center flex-col">
 					<img
 						src={product.image}
 						alt={product.model}
@@ -24,16 +24,12 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 					</div>
 				</div>
 
-				{/* Full Height Fade Overlay:
-                  - Mobile: Standard block below image.
-                  - lg:absolute lg:inset-0: Covers the entire card area.
-                  - lg:opacity-0 group-hover:opacity-100: Controls the fade effect.
-                  - lg:flex lg:flex-col lg:justify-center: Centers the stats vertically on full height.
-                */}
 				<div
-					className="p-6 transition-all duration-500 ease-in-out bg-gray-100 
-                                lg:absolute lg:inset-0 lg:z-20 lg:bg-gray-800/90 lg:backdrop-blur-md 
-                                lg:opacity-0 lg:group-hover:opacity-60 lg:flex lg:flex-col lg:justify-center lg:items-center">
+					className="px-6 pb-4 transition-all duration-500 ease-in-out bg-gray-100 
+                lg:absolute lg:inset-0 lg:z-20 
+                lg:bg-gray-800/60 lg:backdrop-blur-md 
+                lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible
+                lg:flex lg:flex-col lg:justify-center lg:items-center">
 					<h3 className="text-orange-400 text-sm font-bold mb-1">
 						{product.title}
 					</h3>
@@ -44,14 +40,14 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 					<div className="grid grid-cols-2 gap-y-4 gap-x-6">
 						{product.specs.map((spec: ProductSpec, index: number) => (
 							<div key={index} className="flex items-start gap-3">
-								<div className="mt-1 text-slate-500">
+								<div className="mt-1 text-slate-400">
 									<spec.icon size={18} strokeWidth={2} />
 								</div>
 								<div>
-									<div className="text-xs lg:text-slate-400 text-gray-800 font-medium">
+									<div className="text-xs lg:text-slate-300 text-gray-800 font-medium">
 										{spec.label}
 									</div>
-									<div className="text-sm text-gray-800 lg:text-slate-200 font-bold">
+									<div className="text-sm text-gray-800 lg:text-white font-bold">
 										{spec.value}
 									</div>
 								</div>

@@ -3032,17 +3032,11 @@ const products: Product[] = [
 	{
 		id: 6,
 		category: "Vertical",
-		badge: "Elite",
-		title: "Ultra VMC",
-		model: "VMC-MAX-Z",
-		image:
-			"https://media.istockphoto.com/id/2149279878/photo/shot-blasting-man-in-production-the-sandblaster-is-sending-to-steel-material-abrasive.jpg?s=612x612&w=0&k=20&c=iVntK-1R42eULcv0hVGUEWlhHe0fweeAXU5sZQ4Dz04=",
-		specs: [
-			{ icon: Zap, label: "Spindle", value: "24k RPM" },
-			{ icon: Settings, label: "Slots", value: "60 ATC" },
-			{ icon: Disc, label: "Prec.", value: "0.001" },
-			{ icon: ShieldCheck, label: "Warr.", value: "5 Yr" },
-		],
+		badge: "Comming Soon",
+		title: "",
+		model: "Comming Soon",
+		image: "/comming.png",
+		specs: [],
 	},
 	{
 		id: 7,
