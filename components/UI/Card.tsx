@@ -7,7 +7,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 	return (
 		<Link href={`/products/${product.id}/product`}>
 			<div className="relative isolate overflow-hidden bg-gray-100 rounded-2xl group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50 w-full mx-auto lg:max-w-xl xl:max-w-2xl">
-				<div className="relative h-68 md:h-80 lg:h-125 w-full bg-gray-100 flex items-center justify-center flex-col ">
+				<div className="relative h-68 md:h-80 lg:h-120 w-full bg-gray-100 flex items-center justify-center flex-col ">
 					<img
 						src={product.image}
 						alt={product.model}
