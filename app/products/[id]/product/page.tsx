@@ -38,7 +38,7 @@ export default function Page() {
 				<div className="pb-20 pt-15 px-4 ">
 					<div className=" mx-auto flex flex-wrap justify-center gap-8">
 						{modelsList.map((modelData: any, index: number) => (
-							<div key={index} className="w-full max-w-md">
+							<div key={index} className="w-full max-w-md" id="testChild">
 								<ProductCard
 									name={modelData.name}
 									image={modelData.image}
