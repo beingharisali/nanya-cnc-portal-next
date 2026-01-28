@@ -10,7 +10,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 	return (
 		<Link href={`/products/${id}/product/${name}/details`}>
-			<div className="bg-gray-100 rounded-2xl  group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
+			<div className="bg-gray-100 rounded-2xl overflow-hidden group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
 				<div className="relative h-90 bg-gray-100 scale-90">
 					<img
 						src={image}
@@ -22,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 					</div>
 				</div>
 
-				<div className="p-8 text-center bg-gray-100">
+				<div className="pb-4 text-center bg-gray-100">
 					<h3 className="text-gray-900 text-3xl font-black mb-2 tracking-tighter uppercase group-hover:text-orange-600 transition-colors duration-300">
 						{name}
 					</h3>
