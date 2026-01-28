@@ -7,12 +7,13 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 	return (
 		<Link href={`/products/${product.id}/product`}>
 			<div className="relative isolate overflow-hidden bg-gray-100 rounded-2xl group hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-slate-700/50 w-full mx-auto lg:max-w-xl xl:max-w-2xl">
-				<div className="relative h-68 md:h-80 lg:h-120 w-full bg-gray-100 flex items-center justify-center flex-col ">
+				<div className="relative h-68 md:h-80 lg:h-105 w-full bg-gray-100 flex items-center justify-center flex-col">
 					<img
 						src={product.image}
 						alt={product.model}
-						className="max-w-full max-h-full object-contain transform transition-transform duration-500 group-hover:scale-105 will-change-transform"
+						className="max-w-full max-h-full object-contain transform transition-transform duration-500 lg:scale-95 group-hover:scale-100 will-change-transform"
 					/>
+
 					<div className="z-10 pointer-events-none">
 						<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
 							{product.badge}
@@ -21,12 +22,18 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 							<h1 className="font-semibold">{product.badge2}</h1>
 						</div>
 					</div>
-					<div className="hidden lg:flex absolute bottom-2 inset-x-0 justify-center p-5 text-center text-2xl font-extrabold transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
-						<h1 className="text-gray-800">{product.model}</h1>
-					</div>
 				</div>
 
-				<div className="p-6 transition-all duration-500 ease-in-out lg:absolute lg:inset-x-0 lg:bottom-0 lg:translate-y-full lg:group-hover:translate-y-0 bg-gray-100 lg:bg-gray-800 lg:opacity-70 lg:backdrop-blur-sm lg:max-h-full lg:overflow-y-auto">
+				{/* Full Height Fade Overlay:
+                  - Mobile: Standard block below image.
+                  - lg:absolute lg:inset-0: Covers the entire card area.
+                  - lg:opacity-0 group-hover:opacity-100: Controls the fade effect.
+                  - lg:flex lg:flex-col lg:justify-center: Centers the stats vertically on full height.
+                */}
+				<div
+					className="p-6 transition-all duration-500 ease-in-out bg-gray-100 
+                                lg:absolute lg:inset-0 lg:z-20 lg:bg-gray-800/90 lg:backdrop-blur-md 
+                                lg:opacity-0 lg:group-hover:opacity-60 lg:flex lg:flex-col lg:justify-center lg:items-center">
 					<h3 className="text-orange-400 text-sm font-bold mb-1">
 						{product.title}
 					</h3>
