@@ -2507,7 +2507,7 @@ const products: Product[] = [
 		badge: "Reliable",
 		title: "Veritcal Lathe Machine",
 		model: "VLT-550 / 750 ",
-		image: "/vt/vlt 550.png",
+		image: "/vt/550.png",
 		download: "/documents/vlt.pdf",
 		specs: [
 			{ icon: Zap, label: "Spindle", value: "50 - 2000 rpm" },
@@ -2518,7 +2518,7 @@ const products: Product[] = [
 		models: [
 			{
 				name: "VLT-550",
-				image: "/vt/vlt 550.png",
+				image: "/vt/550.png",
 				download: "/documents/VLT-550.pdf",
 				feature:
 					"High-performance CNC Vertical Lathe designed for heavy-duty turning operations with a compact footprint.",
@@ -2770,7 +2770,7 @@ const products: Product[] = [
 			},
 			{
 				name: "VLT-750",
-				image: "/vt/vlt-750.png",
+				image: "/vt/750.png",
 				download: "/documents/vlt-750.pdf",
 				feature:
 					"Heavy-duty CNC Vertical Lathe featuring a large 15-inch chuck and increased turning capacity.",
@@ -3032,9 +3032,9 @@ const products: Product[] = [
 	{
 		id: 6,
 		category: "Vertical",
-		badge: "Comming Soon",
+		badge: "Coming Soon",
 		title: "",
-		model: "Comming Soon",
+		model: "Coming Soon",
 		image: "/comming.png",
 		specs: [],
 	},
