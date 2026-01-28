@@ -148,7 +148,7 @@ export default function Page() {
 										<img
 											src={detailedModel.image}
 											alt={detailedModel.name}
-											className="w-full h-auto object-contain transition-transform duration-500 scale-120 group-hover:scale-105"
+											className="w-full h-auto object-contain transition-transform duration-500 scale-120 group-hover:scale-125"
 										/>
 									</div>
 									<div className="mt-8 p-6 bg-orange-600/10 border border-orange-600/20 rounded-2xl">

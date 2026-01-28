@@ -10,19 +10,19 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
 	return (
 		<Link href={`/products/${id}/product/${name}/details`}>
-			<div className="bg-white rounded-2xl overflow-hidden group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
-				<div className="relative h-90 overflow-hidden bg-gray-100 scale-75">
+			<div className="bg-gray-100 rounded-2xl  group hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)] transition-all duration-500 border border-gray-100">
+				<div className="relative h-90 bg-gray-100 scale-90">
 					<img
 						src={image}
 						alt={name}
 						className="w-full h-full object-fit grayscale group-hover:grayscale-0 scale-110 transition-all duration-700 group-hover:scale-115"
 					/>
-					<div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+					<div className="absolute top-4 right-4 bg-orange-500 text-gray-100 text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 						VIEW
 					</div>
 				</div>
 
-				<div className="p-8 text-center bg-white">
+				<div className="p-8 text-center bg-gray-100">
 					<h3 className="text-gray-900 text-3xl font-black mb-2 tracking-tighter uppercase group-hover:text-orange-600 transition-colors duration-300">
 						{name}
 					</h3>
