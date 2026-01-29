@@ -3032,10 +3032,10 @@ const products: Product[] = [
 	{
 		id: 6,
 		category: "Vertical",
-		badge: "Coming Soon",
+		badge: "",
 		title: "",
 		model: "Coming Soon",
-		image: "/comming.png",
+		image: "/coming.jpeg",
 		specs: [],
 	},
 	{
