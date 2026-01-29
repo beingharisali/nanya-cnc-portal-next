@@ -14,19 +14,27 @@ import {
 import { useState } from "react";
 import RigiditySection from "@/components/pages/products/rigidity";
 import StructureSection from "@/components/pages/products/structure";
-
 export default function Page() {
 	const params = useParams();
 	const id = params.id;
 	const modelParam = params.model;
+	console.log(modelParam);
 	const [display, setDisplay] = useState("features");
 
 	const { products } = useProducts();
 	const parentProduct = products.find((p: any) => p.id === Number(id));
-
-	const detailedModel = parentProduct?.models?.find(
+	if (!parentProduct) {
+		return (
+			<div className="h-dvh flex items-center justify-center  bg-gray-900">
+				<h1>404 Machine Not Found</h1>
+			</div>
+		);
+	}
+	console.log(parentProduct);
+	const detailedModel = parentProduct.models.find(
 		(m: any) => m.name === modelParam,
 	);
+	console.log(detailedModel);
 
 	const downloadURl = detailedModel?.download;
 

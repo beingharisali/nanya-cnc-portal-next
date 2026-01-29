@@ -9,7 +9,6 @@ import React from "react";
 export default function Page() {
 	const params = useParams();
 	const id = params.id;
-	console.log("id", id);
 
 	const { products } = useProducts();
 
@@ -23,6 +22,7 @@ export default function Page() {
 	}
 
 	const modelsList = Object.values(parentProduct.models || {});
+	console.log(modelsList);
 
 	return (
 		<div className="bg-gray-900 min-h-screen">
@@ -39,11 +39,12 @@ export default function Page() {
 				<div className="pb-20 pt-15 px-4 ">
 					<div className=" mx-auto flex flex-wrap justify-center gap-8">
 						{modelsList.map((modelData: any, index: number) => (
-							<div key={index} className="w-full max-w-md">
+							<div key={index} className="w-full max-w-md" id="testChild">
 								<ProductCard
 									name={modelData.name}
 									image={modelData.image}
 									id={id}
+									model={modelData.name}
 								/>
 							</div>
 						))}
