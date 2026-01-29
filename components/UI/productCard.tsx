@@ -6,7 +6,7 @@ import React from "react";
 interface ProductCardProps {
 	name: string;
 	image: string;
-	id: string | number;
+	id: any;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ id, name, image }) => {
