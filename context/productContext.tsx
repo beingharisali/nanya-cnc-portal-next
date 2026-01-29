@@ -1194,7 +1194,7 @@ const products: Product[] = [
 			},
 			{
 				name: "NV-1370",
-				image: "/nv/1370.png",
+				image: "/1370.png",
 				download: "/documents/nv1370.pdf",
 				feature1: {
 					data: [
@@ -3032,10 +3032,10 @@ const products: Product[] = [
 	{
 		id: 6,
 		category: "Vertical",
-		badge: "Coming Soon",
+		badge: "",
 		title: "",
 		model: "Coming Soon",
-		image: "/comming.png",
+		image: "/coming.jpeg",
 		specs: [],
 	},
 	{
