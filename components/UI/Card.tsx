@@ -15,12 +15,16 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 					/>
 
 					<div className="z-10 pointer-events-none">
-						<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
-							{product.badge}
-						</div>
-						<div className="absolute top-4 right-4 bg-white text-green-700 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
-							<h1 className="font-semibold">{product.badge2}</h1>
-						</div>
+						{product.badge && product.badge.trim().length > 0 && (
+							<div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+								{product.badge}
+							</div>
+						)}
+						{product.badge2 && product.badge2.trim().length > 0 && (
+							<div className="absolute top-4 right-4 bg-white text-green-700 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+								<h1 className="font-semibold">{product.badge2}</h1>
+							</div>
+						)}
 					</div>
 				</div>
 
