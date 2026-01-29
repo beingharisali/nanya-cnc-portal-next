@@ -18,7 +18,7 @@ export default function Page() {
 	const params = useParams();
 	const id = params.id;
 	const modelParam = params.model;
-	console.log(modelParam);
+
 	const [display, setDisplay] = useState("features");
 
 	const { products } = useProducts();
@@ -30,11 +30,10 @@ export default function Page() {
 			</div>
 		);
 	}
-	console.log(parentProduct);
+
 	const detailedModel = parentProduct.models.find(
 		(m: any) => m.name === modelParam,
 	);
-	console.log(detailedModel);
 
 	const downloadURl = detailedModel?.download;
 

@@ -22,7 +22,6 @@ export default function Page() {
 	}
 
 	const modelsList = Object.values(parentProduct.models || {});
-	console.log(modelsList);
 
 	return (
 		<div className="bg-gray-900 min-h-screen">
