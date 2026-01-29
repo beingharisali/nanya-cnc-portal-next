@@ -1194,7 +1194,7 @@ const products: Product[] = [
 			},
 			{
 				name: "NV-1370",
-				image: "/1370.png",
+				image: "/nv/1370.png",
 				download: "/documents/nv1370.pdf",
 				feature1: {
 					data: [
