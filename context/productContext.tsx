@@ -41,7 +41,9 @@ const products: Product[] = [
 				name: "VMC-NANO-X8",
 				image: "/x8/x8.png",
 				download: "/documents/nano-x8.pdf",
+
 				feature1: {
+					heading: "Structure Rigidity",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 						"Without counterweight design that enhances surface accuracy",
@@ -52,6 +54,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "How We built Structure",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 48 /48 /40 m/min.",
@@ -323,6 +326,7 @@ const products: Product[] = [
 				image: "/x8/x10.png",
 				download: "/documents/nano-x10.pdf",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 						"Without counterweight design that enhances surface accuracy",
@@ -333,6 +337,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 48 /48 /40 m/min.",
@@ -621,22 +626,24 @@ const products: Product[] = [
 				image: "/nv/NV-855-03.png",
 				download: "/documents/nv-855.pdf",
 				feature1: {
+					heading: "VERTICAL COLUMN STRUCTURE",
 					data: [
-						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
-						"Without counterweight design that enhances surface accuracy",
-						"Significantly improves load-bearing capacity and rigidity, enhancing the structure's stability and reliability.",
-						"Spindle ram rigidity and empower the spindle & heavy motor load capacity",
-						"High-rigidity design ensures continuous accuracy and stability during heavy operations",
+						"MODLE: NV-855 FEATURE OF TECHNOLOGY HOW TO BUILD IT: CORE BRAND SPIRIT STRONG & TRUST-BUILDING",
+						"Precision is not sourced. It is controlled WE DON’T JUST ASSEMBLE MACHINES. WE VALIDATE PERFORMANCE",
+						"VERTICAL COLUMN STRUCTURE High-precision CNC Milling Machine Frame structure Machining Center NV-855 Vertical Milling Machine Cnc.",
+						"High-Grade Cast Iron (HT300) Used for its high rigidity, strength, and thermal stability to minimize deformation during operation.",
+						"T-base rigid structure for stroke support eliminates overhang issue SELECTION OF RELIABLE MFG. Component name & selection (Spindle/Ball-Screw/Linear Guide. ROYAL PTC MADE IN TAIWAN Every micron matters. So do the parts. SPINDLE DDS. Direct driven technology High-Speed Spindle Unit Balanced for vibration control Thermal stability tested before assembly Verified runout before installation",
 					],
 					image: "/nv/NV-855-01.png",
 				},
 				feature2: {
+					heading: "SELECTION OF RELIABLE MFG.",
 					data: [
-						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
-						"Fast Rapid Speed 48 /48 /40 m/min.",
-						"The Y-axis is equipped with 4 roller guideways for better rigidity.",
-						"High quality linear ways guide and high pitch ball-screw makes the difference during milling.",
-						"Super-fast cut and complex applications.",
+						"MODLE: NV-855 FEATURE OF TECHNOLOGY HOW TO BUILD IT: SELECTION OF RELIABLE MFG. Component name & selection (Ball-Screw/Linear Guide. HIWIN MADE IN TAIWAN LINEAR GUIDE WAY",
+						"Outsourced manufacturing does not mean outsourced responsibility. Every spare part passes through our inspection, tuning, and validation process before it becomes part of your machine",
+						"LINEAR GUIDE WAY HIWIN manufactures high-precision ball screws (ground or rolled) and supporting bearing units for efficient linear motion. Key types include internal/endcap recirculation, heavy load series, and rotating nut configurations (R1/R2). These components provide high axial stiffness and low friction for automation, robotics, and machine tools.",
+						"THIS REASSURES CUSTOMERS WHO WORRY ABOUT CONSISTENCY LIFESPAN REPLACEMENT COMPATIBILITY MODLE: NV-855 FEATURE OF TECHNOLOGY HOW TO BUILD IT: STORY ISN’T FINISH HERE! Manufacturing doesn’t end at delivery. That’s where ours begin QC Is Our Real Manufacturing art.",
+						"FORMULA ANGLE: OUTSOURCING = FLEXIBILITY + FAST UPGRADES. FASTER ADOPTION OF NEXT-GEN COMPONENTS MULTI-SOURCE RISK CONTROL CONTINUOUS PERFORMANCE UPGRADES BY PARTNERING WITH SPECIALIZED MANUFACTURERS, WE KEEP YOUR MACHINE AHEAD OF THE CURVE linear interferometer Optics mounting kit XL Laser Power Supply unit linear Reflectors Direction of movement Material temperature sensor(s) Air temperature sensor(s) Computer running calibration software Tripod XC Compensator",
 					],
 					image: "/nv/NV-855-02.png",
 				},
@@ -909,22 +916,23 @@ const products: Product[] = [
 				image: "/nv/NV-1165-02.png",
 				download: "/documents/nv1165.pdf",
 				feature1: {
+					heading: "NV-1165 FEATURE OF TECHNOLOGY HOW TO BUILD IT",
 					data: [
-						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
-						"Without counterweight design that enhances surface accuracy",
-						"Significantly improves load-bearing capacity and rigidity, enhancing the structure's stability and reliability.",
-						"Spindle ram rigidity and empower the spindle & heavy motor load capacity",
-						"High-rigidity design ensures continuous accuracy and stability during heavy operations",
+						"Milling Machine Cnc High-Grade Cast Iron (HT300) Used for its high rigidity, strength,and thermal stability to minimize deformation during operation",
+						"T-base rigid structure for stroke support eliminates overhang issue SELECTION OF RELIABLE MFG",
+						"Component name & selection (Spindle/Ball-Screw/Linear Guide. ROYAL PTC MADE IN TAIWAN Every micron matters.",
+						"So do the parts. SPINDLE DDS. Direct driven technology High-Speed Spindle Unit Balanced for vibration control Thermal stability tested before assembly Verified runout before installation.",
 					],
 					image: "/nv/NV-1165-03.png",
 				},
 				feature2: {
+					heading: "SELECTION OF RELIABLE MFG",
 					data: [
-						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
-						"Fast Rapid Speed 48 /48 /40 m/min.",
-						"The Y-axis is equipped with 4 roller guideways for better rigidity.",
-						"High quality linear ways guide and high pitch ball-screw makes the difference during milling.",
-						"Super-fast cut and complex applications.",
+						"Component name & selection (Ball-Screw/Linear Guide. HIWIN MADE IN TAIWAN LINEAR GUIDE WAY Outsourced manufacturing does not mean outsourced responsibility.",
+						"Every spare part passes through our inspection, tuning, and validation process before it becomes part of your machine.",
+						"LINEAR GUIDE WAY HIWIN manufactures high-precision ball screws (ground or rolled) and supporting bearing units for efficient linear motion.",
+						"Key types include internal/endcap recirculation, heavy load series, and rotating nut configurations (R1/R2).These components provide high axial stiffness and low friction for automation, robotics, and machine tools.",
+						"FORMULA ANGLE: OUTSOURCING = FLEXIBILITY + FAST UPGRADES. FASTER ADOPTION OF NEXT-GEN COMPONENTS MULTI-SOURCE RISK CONTROL CONTINUOUS PERFORMANCE UPGRADES BY PARTNERING WITH SPECIALIZED MANUFACTURERS, WE KEEP YOUR MACHINE AHEAD OF THE CURVE linear interferometer Optics mounting kit XL Laser Power Supply unit linear Reflectors Direction of movement Material temperature sensor(s) Air temperature sensor(s) Computer running calibration software Tripod XC Compensator.",
 					],
 					image: "/nv/NV- 1165-01.png",
 				},
@@ -1197,6 +1205,7 @@ const products: Product[] = [
 				image: "/nv/1370.png",
 				download: "/documents/nv1370.pdf",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 						"Without counterweight design that enhances surface accuracy",
@@ -1207,6 +1216,7 @@ const products: Product[] = [
 					image: "/nv/1370.png",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 48 /48 /40 m/min.",
@@ -1505,6 +1515,7 @@ const products: Product[] = [
 				feature:
 					"High-rigidity Horizontal Machining Center designed for heavy-duty cutting and high-precision machining.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy.",
 						"Without counterweight design that enhances surface accuracy.",
@@ -1515,6 +1526,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 24 m/min on X/Y/Z axes.",
@@ -1776,6 +1788,7 @@ const products: Product[] = [
 				feature:
 					"High-rigidity Horizontal Machining Center designed for heavy-duty cutting and high-precision machining.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy.",
 						"Without counterweight design that enhances surface accuracy.",
@@ -1786,6 +1799,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 24 m/min on X/Y/Z axes.",
@@ -2064,6 +2078,7 @@ const products: Product[] = [
 				feature:
 					"High Precision Slant Bed CNC Lathe 3015S designed for heavy duty turning applications.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy.",
 						"Without counterweight design that enhances surface accuracy.",
@@ -2074,6 +2089,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 24 m/min on X/Y/Z axes.",
@@ -2285,6 +2301,7 @@ const products: Product[] = [
 				feature:
 					"High Precision Slant Bed CNC Lathe 3605M designed for heavy duty turning applications with large capacity.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy.",
 						"Without counterweight design that enhances surface accuracy.",
@@ -2295,6 +2312,7 @@ const products: Product[] = [
 					image: "/feature.jpeg",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 24 m/min on X/Y/Z axes.",
@@ -2523,6 +2541,7 @@ const products: Product[] = [
 				feature:
 					"High-performance CNC Vertical Lathe designed for heavy-duty turning operations with a compact footprint.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 						"Without counterweight design that enhances surface accuracy",
@@ -2533,6 +2552,7 @@ const products: Product[] = [
 					image: "/vt/vlt-750.png",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 48 /48 /40 m/min.",
@@ -2775,6 +2795,7 @@ const products: Product[] = [
 				feature:
 					"Heavy-duty CNC Vertical Lathe featuring a large 15-inch chuck and increased turning capacity.",
 				feature1: {
+					heading: "How We built Structure",
 					data: [
 						"The rigid inverted Y-shaped structure has full stroke support without overhang that guarantees the most dynamic leveling accuracy",
 						"Without counterweight design that enhances surface accuracy",
@@ -2785,6 +2806,7 @@ const products: Product[] = [
 					image: "/vt/vlt 550.png",
 				},
 				feature2: {
+					heading: "Structure Rigidity",
 					data: [
 						"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
 						"Fast Rapid Speed 48 /48 /40 m/min.",
