@@ -3,13 +3,6 @@ import { useParams } from "next/navigation";
 import React from "react";
 
 const StructureSection = () => {
-	const points = [
-		"All axes are equipped with roller linear guides and Medium-size ball-screws to ensure stability and longer life under smooth & heavy cutting.",
-		"Fast Rapid Speed 48 /48 /40 m/min.",
-		"The Y-axis is equipped with 4 roller guideways for better rigidity.",
-		"High quality linear ways guide and high pitch ball-screw makes the difference during milling.",
-		"Super-fast cut and complex applications.",
-	];
 	const params = useParams();
 	const id = params.id;
 	const modelParam = params.model;
@@ -21,13 +14,14 @@ const StructureSection = () => {
 		(m: any) => m.name === modelParam,
 	);
 
-	const data = detailedModel.feature2.data;
-	const imageURL = detailedModel.feature2.image;
+	const data = detailedModel?.feature2?.data || [];
+	const imageURL = detailedModel?.feature2?.image;
+	const heading = detailedModel?.feature2?.heading;
 
 	return (
 		<section className="w-full px-[5%] mx-auto py-16 md:py-24 lg:py-32 font-sans text-white">
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-				<div className="w-full order-1 lg:order-1">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
+				<div className="w-full order-1 lg:order-1 lg:sticky lg:top-24">
 					<div className="relative w-full max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-2xl">
 						<img
 							src={imageURL}
@@ -39,7 +33,7 @@ const StructureSection = () => {
 
 				<div className="flex flex-col order-2 lg:order-2">
 					<h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 lg:mb-8 leading-tight tracking-tight text-center lg:text-left">
-						High Rigidity Axial Movement motion ways.
+						{heading}
 					</h2>
 
 					<ul className="space-y-4 md:space-y-5">
