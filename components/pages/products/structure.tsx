@@ -42,7 +42,7 @@ const StructureSection = () => {
 								<span className="text-[10px] md:text-xs mt-2 shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
 									▲
 								</span>
-								<p className="text-base md:text-[20px] leading-relaxed text-gray-200 group-hover:text-white transition-colors">
+								<p className="text-base  leading-relaxed text-gray-200 group-hover:text-white transition-colors">
 									{point}
 								</p>
 							</li>
