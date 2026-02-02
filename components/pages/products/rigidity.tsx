@@ -31,7 +31,7 @@ const RigiditySection = () => {
 								<span className="text-[8px] md:text-[10px] mt-2 text-white shrink-0 opacity-70">
 									▲
 								</span>
-								<p className="text-base md:text-lg leading-snug opacity-90 group-hover:opacity-100 transition-opacity">
+								<p className="text-base md:text-[20px] leading-snug opacity-90 group-hover:opacity-100 transition-opacity">
 									{text}
 								</p>
 							</li>
