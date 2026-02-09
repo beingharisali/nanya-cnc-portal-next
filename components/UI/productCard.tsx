@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 	model,
 }) => {
 	return (
-		<Link href={`/products/${id}/product/${model}/details`}>
+		<Link href={`/products/${id}/product/${model}/loading`}>
 			<div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gray-100 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,115,0,0.15)]">
 				<div className="relative flex aspect-square items-center scale-85 justify-center bg-gray-100">
 					<img
