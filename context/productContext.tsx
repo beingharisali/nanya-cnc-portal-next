@@ -7,6 +7,7 @@ import {
 	ShieldCheck,
 	LucideIcon,
 	Download,
+	Route,
 } from "lucide-react";
 import Product, { ProductSpec } from "@/types/product";
 
@@ -625,6 +626,7 @@ const products: Product[] = [
 				name: "NV-855",
 				image: "/nv/NV-855-03.png",
 				download: "/documents/nv-855.pdf",
+				staticRoute: "/model/nv855",
 				feature1: {
 					heading: "VERTICAL COLUMN STRUCTURE",
 					data: [
